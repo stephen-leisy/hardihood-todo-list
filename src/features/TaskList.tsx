@@ -1,5 +1,6 @@
 'use client';
 
+import { FeatureWrapper } from '@/components/FeatureWrapper';
 import { FilterButton } from '@/components/FilterButton';
 import { HeaderWrapper } from '@/components/HeaderWrapper';
 import { TaskCard } from '@/components/TaskCard';
@@ -55,7 +56,7 @@ export const TaskList = () => {
 
   return (
     <main className="w-screen p-8 flex justify-center">
-      <div className="w-full border border-white rounded-2xl flex flex-col gap-8 lg:max-w-[1024px]">
+      <FeatureWrapper>
         <HeaderWrapper>
           <p className="text-3xl">Task Master</p>
           <div className="flex gap-4">
@@ -78,7 +79,7 @@ export const TaskList = () => {
             />
           ))}
         </section>
-      </div>
+      </FeatureWrapper>
     </main>
   );
 };
