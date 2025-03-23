@@ -1,5 +1,5 @@
-export enum TaskFilters {
+export enum TaskStatusFilterOptions {
   All = 'all',
-  Pending = 'Pending',
-  COmpleted = 'completed',
+  Pending = 'pending',
+  Completed = 'completed',
 }

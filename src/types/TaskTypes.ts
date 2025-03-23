@@ -1,7 +1,7 @@
-import { TaskStatus } from '@/enums/TaskStatus';
+import { TaskStatusFilterOptions } from '@/enums/TaskFilters';
 
 export interface TaskTypes {
   id: number;
   title: string;
-  status: TaskStatus;
+  status: TaskStatusFilterOptions.Completed | TaskStatusFilterOptions.Pending;
 }
