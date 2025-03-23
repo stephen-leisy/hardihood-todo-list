@@ -55,10 +55,10 @@ export const TaskList = () => {
   }, [currentFilter, taskList]);
 
   return (
-    <main className="w-screen p-8 flex justify-center">
+    <main className="w-screen p-4 md:p-8 flex justify-center">
       <FeatureWrapper>
         <HeaderWrapper>
-          <p className="text-3xl">Task Master</p>
+          <p className="text-4xl">Task Master</p>
           <div className="flex gap-4">
             {filterOptionsConfig.map(({ id, title }) => (
               <FilterButton
@@ -70,7 +70,7 @@ export const TaskList = () => {
             ))}
           </div>
         </HeaderWrapper>
-        <section className="p-8 flex flex-col gap-8">
+        <section className="p-4 md:p-8 flex flex-col gap-4 md:gap-8">
           {filteredTaskList?.map((task) => (
             <TaskCard
               key={task.id}
