@@ -11,10 +11,9 @@ export const FilterButton: React.FC<{
       className={`px-4 py-2 rounded-lg text-sm uppercase transition  
         ${
           isActive
-            ? 'bg-purple-500 text-white shadow-md'
-            : 'text-gray-400 hover:text-gray-100'
-        }
-        ${isActive ? 'cursor-auto' : 'cursor-pointer'}`}
+            ? 'bg-purple-500 text-white cursor-auto'
+            : 'text-gray-400 hover:text-gray-100 cursor-pointer'
+        }`}
     >
       {title}
     </button>
